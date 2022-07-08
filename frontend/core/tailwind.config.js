@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+	'./src/pages/**/*.{html,js,vue}',
+    './src/components/**/*.{html,js,vue}',
+	'./src/layouts/**/*.{html,js,vue}',
+	'./src/App.vue',
+  ],
   theme: {
 	colors: {
 		transparent: 'transparent',
 		current: 'currentColor',
 		'white': '#ffffff',
 		'purple': {
+			DEFAULT: '#9659f3',
 			'50': '#f9f5ff',
 			'100': '#f1e9fe',
 			'200': '#e4d6fe',
@@ -19,6 +25,7 @@ module.exports = {
 			'900': '#451c78',
 		},		
 		'green': {
+			DEFAULT: '#26a370',
 			'50': '#eefbf4',
 			'100': '#d6f5e3',
 			'200': '#b1e9ca',
@@ -31,6 +38,7 @@ module.exports = {
 			'900': '#0f4533',
 		},
 		'gray': {
+			DEFAULT: '#6e5f7b',
 			'50': '#f5f4f7',
 			'100': '#e7e3ea',
 			'200': '#d1cad7',
@@ -43,6 +51,7 @@ module.exports = {
 			'900': '#342e37',
 		},
 		'yellow': {
+			DEFAULT: '#ffbf00',
 			'50': '#ffffea',
 			'100': '#fffbc5',
 			'200': '#fff885',
@@ -55,6 +64,7 @@ module.exports = {
 			'900': '#7c420b',
 		},
 		'red': {
+			DEFAULT: '#db504a',
 			'50': '#fdf3f3',
 			'100': '#fbe6e5',
 			'200': '#f9d1cf',
@@ -67,6 +77,7 @@ module.exports = {
 			'900': '#752a27',
 		},
 		'blue': {
+			DEFAULT: '#00b0de',
 			'50': '#ebfeff',
 			'100': '#cdf9ff',
 			'200': '#a1f0ff',
