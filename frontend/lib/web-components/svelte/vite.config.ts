@@ -5,7 +5,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 export default defineConfig({
 	build: {
 		rollupOptions: {
-			input: ['./src/components/Counter.svelte, ./src/components/Clock.svelte'],
+			input: ['./src/components/Counter.svelte', './src/components/Clock.svelte'],
 		},
 	},
 	plugins: [
