@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "@xandao.dev/lib-vue",
   "private": true,
   "version": "0.0.0",
   "scripts": {

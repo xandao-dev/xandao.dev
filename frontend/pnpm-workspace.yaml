@@ -1,0 +1,4 @@
+packages:
+  - 'core/**'
+  - 'lib/**'
+  - 'lib/web-components/**'

@@ -1,0 +1,18 @@
+{
+	"name": "@xandao.dev/portfolio-frontend",
+	"version": "1.0.0",
+	"private": true,
+	"author": "Alexandre Calil",
+	"engines": {
+		"node": ">16.0.0",
+		"pnpm": ">=6"
+	},
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"update-deps": "pnpm update -i -r --latest",
+		"dev": "pnpm --stream --filter @xandao.dev/core dev",
+		"dev-all": "pnpm --stream -r run dev",
+		"build-core": "pnpm run build --filter @xandao.dev/core",
+		"build-libs": "pnpm run build --filter @xandao.dev/lib-*"
+	}
+  }
