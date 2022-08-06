@@ -8,6 +8,8 @@ import HelloWorld from './components/HelloWorld.vue';
 	<div class="flex flex-col justify-center items-center">
 		<img alt="Vue logo" src="./assets/logo.png" />
 		<HelloWorld msg="Hello World!!!" />
+		<wc-message msg="Hey!!!"></wc-message>
+		<wc-counter></wc-counter>
 	</div>
 </template>
 

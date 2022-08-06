@@ -6,5 +6,5 @@ import Message from './components/Message.vue'
 const ClockElement = defineCustomElement(Clock)
 const MessageElement = defineCustomElement(Message)
 
-customElements.define('vue-clock', ClockElement)
-customElements.define('vue-message', MessageElement)
+customElements.define('wc-clock', ClockElement)
+customElements.define('wc-message', MessageElement)

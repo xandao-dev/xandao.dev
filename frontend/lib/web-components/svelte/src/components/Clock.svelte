@@ -1,4 +1,4 @@
-<svelte:options tag="svelte-clock" />
+<svelte:options tag="wc-clock" />
 
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';

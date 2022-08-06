@@ -1,4 +1,4 @@
-<svelte:options tag="svelte-counter" />
+<svelte:options tag="wc-counter" />
 
 <script lang="ts">
   let count: number = 0
