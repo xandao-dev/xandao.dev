@@ -1,0 +1,67 @@
+name: frontend-ci
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    frontend-ci:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout 🛎
+              uses: actions/checkout@main
+
+            - name: Setup node env 🏠
+              uses: actions/setup-node@main
+              with:
+                  node-version: 16
+                  check-latest: true
+
+            - name: Install pnpm 🧱
+              uses: pnpm/action-setup@main
+              id: pnpm-install
+              with:
+                version: 7
+                run_install: false
+
+            - name: Get pnpm cache directory 🛠
+              id: pnpm-cache
+              run: echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+            - name: Setup pnpm cache 📦
+              uses: actions/cache@main
+              with:
+                path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+                key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+                restore-keys: ${{ runner.os }}-pnpm-store-
+
+            - name: Install dependencies 👨🏻‍💻
+              working-directory: ./frontend
+              run: pnpm install
+
+            - name: Run linter 🧽
+              working-directory: ./frontend
+              run: pnpm lint
+
+            - name: Run formatter 👀
+              working-directory: ./frontend
+              run: pnpm format
+
+            - name: Run tests 🧪
+              working-directory: ./frontend
+              run: pnpm test
+
+            - name: Build Core 🏗️
+              working-directory: ./frontend
+              run: pnpm build-core
+
+            - name: Deploy Core 🚀
+              uses: peaceiris/actions-gh-pages@v3
+              working-directory: ./frontend/core
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist
