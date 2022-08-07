@@ -61,7 +61,6 @@ jobs:
 
             - name: Deploy Core 🚀
               uses: peaceiris/actions-gh-pages@v3
-              working-directory: ./frontend/core
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./dist
+                  publish_dir: ./frontend/core/dist
