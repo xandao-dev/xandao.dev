@@ -1,25 +1,7 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue';
+import Wip from './pages/Wip.vue';
 </script>
 
 <template>
-	<div class="flex flex-col justify-center items-center">
-		<img alt="Vue logo" src="./assets/logo.png" />
-		<HelloWorld msg="Hello World!!!" />
-		<wc-message msg="Hey!!!"></wc-message>
-		<wc-counter></wc-counter>
-	</div>
+	<Wip />
 </template>
-
-<style>
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
-}
-</style>
