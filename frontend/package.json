@@ -12,8 +12,8 @@
 		"update-deps": "pnpm update -i -r --latest",
 		"dev": "pnpm --stream --filter @xandao.dev/core dev",
 		"dev-all": "pnpm --stream -r run dev",
-		"build-core": "pnpm run build --filter @xandao.dev/core",
-		"build-libs": "pnpm run build --filter @xandao.dev/lib-*",
+		"build-core": "pnpm --filter @xandao.dev/core build",
+		"build-libs": "pnpm --filter @xandao.dev/lib-* build",
 		"lint": "echo 'Lint not implemented yet'",
 		"format": "echo 'Format not implemented yet'",
 		"test": "echo 'Test not implemented yet'"
