@@ -22,7 +22,7 @@ jobs:
                   check-latest: true
 
             - name: Install pnpm 🧱
-              uses: pnpm/action-setup@main
+              uses: pnpm/action-setup@v2
               id: pnpm-install
               with:
                 version: 7
