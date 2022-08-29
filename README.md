@@ -29,10 +29,11 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
+	  	<li><a href="#recommended-ide-setup">Recommended IDE Setup</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#front-end-usage">Front-end Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
