@@ -6,11 +6,11 @@
     My personal website! For you to know more about me and my work.
     <br />
 	<br />
-    <a href="https://github.com/xandao6/xandao.dev"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/xandao-dev/xandao.dev"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://github.com/xandao6/xandao.dev/issue">Report Bug</a>
+    <a href="https://github.com/xandao-dev/xandao.dev/issue">Report Bug</a>
     ·
-    <a href="https://github.com/xandao6/xandao.dev/issues">Request Feature</a>
+    <a href="https://github.com/xandao-dev/xandao.dev/issues">Request Feature</a>
   </p>
 </p>
 
@@ -47,7 +47,7 @@
 ## About The Project
 
 <div align="center">
-  <a href="https://github.com/xandao6/xandao.dev">
+  <a href="https://github.com/xandao-dev/xandao.dev">
     <img src="./frontend/public/wip.png" alt="Xandão.dev Website">
   </a>
 </div>
@@ -78,7 +78,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/xandao6/xandao.dev.git
+   git clone https://github.com/xandao-dev/xandao.dev.git
    ```
 2. Install frontend dependencies
    ```sh
@@ -103,7 +103,7 @@ To get a local copy up and running follow these simple steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/xandao6/xandao.dev/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/xandao-dev/xandao.dev/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -126,9 +126,10 @@ Free software =)
 <!-- CONTACT -->
 ## Contact
 
-Alexandre Calil - [@xandao6](https://www.linkedin.com/in/xandao6/) - alexandrecalilmf@gmail.com
+Alexandre Calil - [Linkedin](https://www.linkedin.com/in/xandao-dev/) - [alexandre@xandao.dev](mailto:alexandre@xandao.dev)
 
-Project Link: [https://github.com/xandao6/xandao.dev](https://github.com/xandao6/xandao.dev)
+Project Link: [https://github.com/xandao-dev/xandao.dev](https://github.com/xandao-dev/xandao.dev)
+
 ## Acknowledgements
 
 * [Web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
